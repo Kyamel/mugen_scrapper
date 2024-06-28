@@ -1,18 +1,21 @@
-# Usando uma imagem base do Go
-FROM golang:1.22.4
+# Use uma imagem base do Go
+FROM golang:1.21
 
-# Diretório de trabalho
+# Defina o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copiar os arquivos para o contêiner
+# Copie os arquivos do projeto para o diretório de trabalho
 COPY . .
 
-# Instalar as dependências e construir o binário
-RUN go mod download
-RUN go build -o main .
+# Navegue para o diretório src
+WORKDIR /app/src
 
-# Expor a porta usada pela API
+# Baixe as dependências e compile o binário
+RUN go mod tidy
+RUN go build -o /app/app
+
+# Defina a porta em que a aplicação irá rodar
 EXPOSE 8080
 
 # Comando para rodar a aplicação
-CMD ["./main"]
+CMD ["/app/app"]
