@@ -1,0 +1,13 @@
+# Ignore the .vscode directory
+.vscode/
+
+# Ignore binary files
+*.exe
+*.out
+
+# Ignore the vendor directory (if not using `go mod vendor`)
+vendor/
+
+# Ignore other common files
+.DS_Store
+*.log

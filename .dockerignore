@@ -1,0 +1,10 @@
+# Ignorar o diretório de módulos do Go
+/vendor
+/bin
+/obj
+
+# Ignorar arquivos e diretórios de sistema
+.DS_Store
+.git
+.gitignore
+.vscode
