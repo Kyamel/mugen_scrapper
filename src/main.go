@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"mugen_scrapper/src/routes"
+	"mugen_scraper/src/routes"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"

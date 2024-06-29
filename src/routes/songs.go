@@ -2,8 +2,8 @@ package routes
 
 import (
 	"encoding/json"
-	"mugen_scrapper/src/scrapers"
-	"mugen_scrapper/src/shared"
+	"mugen_scraper/src/scrapers"
+	"mugen_scraper/src/shared"
 	"net/http"
 )
 

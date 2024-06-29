@@ -2,8 +2,8 @@ package routes
 
 import (
 	"encoding/json"
-	"mugen_scrapper/src/scrapers"
-	"mugen_scrapper/src/shared"
+	"mugen_scraper/src/scrapers"
+	"mugen_scraper/src/shared"
 	"net/http"
 )
 
@@ -15,7 +15,6 @@ func GetEpisodes(w http.ResponseWriter, r *http.Request) {
 
 	anime = replaceSpacesWithHyphens(anime)
 
-	// Função de scrapping (a ser implementada)
 	episodes, err := scrapers.ScrapeEpisodes(anime, episode, platform, dub)
 	if err != nil {
 		shared.HandleScrapingError(w, err)

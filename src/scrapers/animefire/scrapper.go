@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"mugen_scrapper/src/shared"
+	"mugen_scraper/src/shared"
 	"net/http"
 	"net/url"
 	"regexp"

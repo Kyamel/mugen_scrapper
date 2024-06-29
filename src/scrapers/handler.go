@@ -3,8 +3,8 @@ package scrapers
 import (
 	"errors"
 	"fmt"
-	"mugen_scrapper/src/scrapers/animefire"
-	"mugen_scrapper/src/shared"
+	"mugen_scraper/src/scrapers/animefire"
+	"mugen_scraper/src/shared"
 	"strconv"
 )
 

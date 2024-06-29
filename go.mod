@@ -1,4 +1,4 @@
-module mugen_scrapper
+module mugen_scraper
 
 go 1.21
 

@@ -2,7 +2,7 @@ package animefire
 
 import (
 	"fmt"
-	"mugen_scrapper/src/shared"
+	"mugen_scraper/src/shared"
 	"strings"
 )
 
